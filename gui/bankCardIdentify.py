@@ -178,7 +178,7 @@ class BaseWidget(QWidget):
             # 如果识别完成，直接显示结果
             self.keyResultWidget.setName(self.imgList[imgIndex].name)
             self.keyResultWidget.update()
-            self.print("北海沐光队")
+            self.print("佩琪小分队")
             self.print(self.imgList[imgIndex].name)
         else:
             # 如果未识别完成
@@ -206,7 +206,7 @@ class BaseWidget(QWidget):
             # 如果识别完成，直接显示结果
             self.detailProcessWidget.setPath(self.imgList[imgIndex].path)
             self.detailProcessWidget.update()
-            self.print("北海沐光队")
+            self.print("佩琪小分队")
         else:
             # 如果未识别完成
             # 设置50ms的定时器判断处理完成没
@@ -299,7 +299,7 @@ class BaseWidget(QWidget):
         self.timer.setSingleShot(True)  # 只触发一次
         self.timer.start(3000)
 
-    def print(self, str="北海沐光队"):
+    def print(self, str="佩琪小分队"):
         self.hintButton.setText(str)
 
 
